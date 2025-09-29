@@ -1,0 +1,593 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "CUESTIONARIO INICIAL",
+        "formDescription": "Buenas! voy a realizar una serie de preguntas para conocer lo mejor posible tu punto de partida, circunstancias y objetivos. Cuanta mas información tenga mas lo podremos adaptar y será mas sencillo. \nLos apartados de medidas son una forma mas de comprobar el progreso a parte del peso y la visual. No es obligatorio pero si recomendable.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Correo",
+              "fieldType": "email",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Nombre",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Apellidos",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Qué tipo de servicio estás interesado en contratar? (Las asesorías incluyen tanto nutrición como entrenamiento",
+              "fieldType": "radio",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Asesoría mensual"
+                  },
+                  {
+                    "option": "Asesoría trimestral"
+                  },
+                  {
+                    "option": "Asesoría semestral"
+                  },
+                  {
+                    "option": "Competición"
+                  },
+                  {
+                    "option": "Nutrición"
+                  },
+                  {
+                    "option": "Entrenamiento"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Edad",
+              "fieldType": "number",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Altura  (cm)",
+              "fieldType": "number",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Peso (kg)",
+              "fieldType": "number",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Objetivo: ¿Qué quieres conseguir? ¿Cuál/es son tus objetivos? Pueden ser tanto deportivos como estéticos o de salud.",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Medida pecho/espalda (cm)",
+              "fieldType": "number"
+            },
+            {
+              "fieldLabel": "Medida cintura (cm)",
+              "fieldType": "=number",
+              "fieldOptions": {
+                "values": [
+                  {}
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Medida cuádriceps",
+              "fieldType": "number"
+            },
+            {
+              "fieldLabel": "Rutina y Ocupación: ¿Qué horarios tienes de trabajo y cuando tienes libre para entrenar, comer, etc?",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Tienes experiencia entrenando en el gimnasio o practicando algún otro deporte? de ser así cuanto tiempo, que nivel, implicación, etc.",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Cuántos días a la semana puedes ir a entrenar en función de tu rutina diaria? ",
+              "fieldType": "number",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Entrenar los fines de semana es una opción viable para descargar tareas entre semana o prefieres de Lunes a Viernes de forma habitual?",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿A qué gimnasio irías? ¿Ves algún tipo de limitación o carencia en el? Conocer la marca me ayudará a saber que maquinaria tiene",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Tienes alguna lesión, dolor o impedimento?",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Prefieres entrenar por las mañanas, tardes o noche? ",
+              "fieldType": "radio",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Mañanas"
+                  },
+                  {
+                    "option": "Tardes"
+                  },
+                  {
+                    "option": "Noches"
+                  }
+                ]
+              },
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Has realizado antes ejercicios de fuerza (desde maquinas a pesos libres)?",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Tienes pulsera de actividad o app para medir lo pasos diarios?",
+              "fieldType": "radio",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Si"
+                  },
+                  {
+                    "option": "No"
+                  },
+                  {
+                    "option": "No, pero podría instalar la App"
+                  }
+                ]
+              },
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Cuánto tiempo estimas que tienes para poder realizar tus entrenamientos sin tener que hacer malabares con tu día a día?",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Tienes material como Straps para poder mejorar el agarre en ejercicios de espalda?",
+              "fieldType": "radio",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Si"
+                  },
+                  {
+                    "option": "No"
+                  },
+                  {
+                    "option": "No, pero puedo combrar"
+                  }
+                ]
+              },
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Descríbeme como suele ser tu alimentación un día cualquiera y la cantidad de líquido que sueles beber. Procura ser lo más exacto/a posible en cuanto a cantidades y tipo de alimentos. No es necesario que digas en GR las cantidades.",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Dime 5 alimentos que te gustaría tener en la dieta y 5 que no te gusten (si no llegas a 5 no pasa nada)",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Hay algún momento del día en que te sea imposible comer?",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Qué momento del día sueles tener más hambre?",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿estas acostumbrado a desayunar? de no ser así, crees que podrías hacerlo? ",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Tienes freidora de aire?",
+              "fieldType": "radio",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Si"
+                  },
+                  {
+                    "option": "No"
+                  }
+                ]
+              },
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Tienes alguna alergia o intolerancia?",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Sueles salir fuera a comer? ¿con que frecuencia y que tipo de sitios visitas para comer?",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Sales de fiesta con regularidad consumiendo alcohol?",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿En que supermercado sueles hacer la compra?",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Si hay alguna otra cosa que crees que deba tener en cuenta sobre tu alimentación cuéntamelo aquí.",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Cuál es tu ocupación (estudio, trabajo...)? ¿Realizas algún tipo de esfuerzo físico en ella?",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "En tu tiempo libre ¿Qué nivel de actividad dirías que tienes? Si conoces tu actividad diaria en pasos indícamela por favor.",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Practicas algún otro tipo de actividad física?",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Cómo dirías que es tu calidad de sueño/descanso?",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "¿Tomas o tomarías suplementación?",
+              "fieldType": "textarea",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.3,
+      "position": [
+        -160,
+        -80
+      ],
+      "id": "afc9ff76-71b3-41fa-814b-d4167b4cce88",
+      "name": "Cuando se rellena el Cuestionario Inicial",
+      "webhookId": "63c3de0d-7bb0-490b-9724-89b1a4533eb3"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kptYlQC8bxXL6fMUnC83bTkWZuaIuowX2bS661swjnA",
+          "mode": "list",
+          "cachedResultName": "Copia de Seguimiento Clientes 2",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kptYlQC8bxXL6fMUnC83bTkWZuaIuowX2bS661swjnA/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1249054183,
+          "mode": "list",
+          "cachedResultName": "Hoja 2",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kptYlQC8bxXL6fMUnC83bTkWZuaIuowX2bS661swjnA/edit#gid=1249054183"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Estado": "=Activo",
+            "Servicio": "={{ $json['¿Qué tipo de servicio estás interesado en contratar? (Las asesorías incluyen tanto nutrición como entrenamiento'] }}",
+            "Valor estimado": "={{ \n  ({\n    \"Asesoría trimestral\": \"180€\",\n    \"Asesoría mensual\": \"70€\",\n    \"Asesoría semestral\": \"360€\",\n    \"Competición\": \"990€\",\n    \"Nutrición\": \"50€\",\n    \"Entrenamiento\": \"30€\"\n  })[$json[\"¿Qué tipo de servicio estás interesado en contratar? (Las asesorías incluyen tanto nutrición como entrenamiento\"]] \n  || \"Sin precio\"\n}}\n",
+            "Fecha inicio": "={{ $now.format('dd/MM/yyyy') }}",
+            "Fecha renovación": "={{\n(() => {\n  const servicio = ($json[\"¿Qué tipo de servicio estás interesado en contratar? (Las asesorías incluyen tanto nutrición como entrenamiento\"] || \"\").trim();\n\n  const duraciones = {\n    \"Asesoría mensual\": { months: 1 },\n    \"Asesoría trimestral\": { months: 3 },\n    \"Asesoría semestral\": { months: 6 },\n    \"Nutrición\": { months: 1 },\n    \"Entrenamiento\": { months: 1 },\n    \"Competición\": { years: 1 }\n  };\n\n  const delta = duraciones[servicio] || { months: 0 };\n  return $now.plus(delta).toFormat('dd/MM/yyyy');\n})()\n}}\n",
+            "Nombre": "={{ $json.Nombre + \" \" + $json.Apellidos }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Estado",
+              "displayName": "Estado",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Nombre",
+              "displayName": "Nombre",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Servicio",
+              "displayName": "Servicio",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Valor estimado",
+              "displayName": "Valor estimado",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Fecha inicio",
+              "displayName": "Fecha inicio",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Fecha renovación",
+              "displayName": "Fecha renovación",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Notas",
+              "displayName": "Notas",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Columna 1",
+              "displayName": "Columna 1",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "@",
+              "displayName": "@",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        48,
+        -80
+      ],
+      "id": "c50f9d90-ceec-448f-ba9d-c6e728a2fefc",
+      "name": "Agregar fila al excel de seguimiento de clientes",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Br7ZodM0UX5O3ouu",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fromEmail": "irenesantesteban@gmail.com",
+        "toEmail": "irenesantesteban@gmail.com",
+        "subject": "Quedan 2 días para la renovación de ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        256,
+        144
+      ],
+      "id": "fbb30d88-cc96-4049-b5f6-d2a4ddafccc3",
+      "name": "Send email",
+      "webhookId": "a31e78ef-fa4d-4238-9d7d-9145c629dfc0",
+      "credentials": {
+        "smtp": {
+          "id": "FxK8UzSdh4rxc4EN",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -160,
+        144
+      ],
+      "id": "04c14c2e-8222-45d7-9147-81efb654a85f",
+      "name": "Todos los días a las 8:00"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1kptYlQC8bxXL6fMUnC83bTkWZuaIuowX2bS661swjnA",
+          "mode": "list",
+          "cachedResultName": "Copia de Seguimiento Clientes 2",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kptYlQC8bxXL6fMUnC83bTkWZuaIuowX2bS661swjnA/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1249054183,
+          "mode": "list",
+          "cachedResultName": "Hoja 2",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kptYlQC8bxXL6fMUnC83bTkWZuaIuowX2bS661swjnA/edit#gid=1249054183"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Fecha renovación",
+              "lookupValue": "={{ $now.plus({ days: 2 }).toFormat('d/M/yyyy') }}"
+            }
+          ]
+        },
+        "combineFilters": "=AND",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        48,
+        144
+      ],
+      "id": "c3eb5b8d-a516-4f20-ab1b-ba1c657797cd",
+      "name": "Get las filas que tengan renovación dentro de 2 días",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Br7ZodM0UX5O3ouu",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {
+    "Cuando se rellena el Cuestionario Inicial": [
+      {
+        "json": {
+          "Correo": "irenesantesteban@gmail.com",
+          "Nombre": "Irene",
+          "Apellidos": "Santesteban Frances",
+          "¿Qué tipo de servicio estás interesado en contratar? (Las asesorías incluyen tanto nutrición como entrenamiento": "Asesoría mensual",
+          "Edad": 22,
+          "Altura  (cm)": 2,
+          "Peso (kg)": 2,
+          "Objetivo: ¿Qué quieres conseguir? ¿Cuál/es son tus objetivos? Pueden ser tanto deportivos como estéticos o de salud.": "22",
+          "Medida pecho/espalda (cm)": 2,
+          "Medida cintura (cm)": 2,
+          "Medida cuádriceps": 2,
+          "Rutina y Ocupación: ¿Qué horarios tienes de trabajo y cuando tienes libre para entrenar, comer, etc?": "2",
+          "¿Tienes experiencia entrenando en el gimnasio o practicando algún otro deporte? de ser así cuanto tiempo, que nivel, implicación, etc.": "2",
+          "¿Cuántos días a la semana puedes ir a entrenar en función de tu rutina diaria? ": 2,
+          "Entrenar los fines de semana es una opción viable para descargar tareas entre semana o prefieres de Lunes a Viernes de forma habitual?": "2",
+          "¿A qué gimnasio irías? ¿Ves algún tipo de limitación o carencia en el? Conocer la marca me ayudará a saber que maquinaria tiene": "2",
+          "¿Tienes alguna lesión, dolor o impedimento?": "2",
+          "¿Prefieres entrenar por las mañanas, tardes o noche? ": "Mañanas",
+          "¿Has realizado antes ejercicios de fuerza (desde maquinas a pesos libres)?": "2",
+          "¿Tienes pulsera de actividad o app para medir lo pasos diarios?": "Si",
+          "¿Cuánto tiempo estimas que tienes para poder realizar tus entrenamientos sin tener que hacer malabares con tu día a día?": "2",
+          "¿Tienes material como Straps para poder mejorar el agarre en ejercicios de espalda?": "Si",
+          "Descríbeme como suele ser tu alimentación un día cualquiera y la cantidad de líquido que sueles beber. Procura ser lo más exacto/a posible en cuanto a cantidades y tipo de alimentos. No es necesario que digas en GR las cantidades.": "2",
+          "Dime 5 alimentos que te gustaría tener en la dieta y 5 que no te gusten (si no llegas a 5 no pasa nada)": "2",
+          "¿Hay algún momento del día en que te sea imposible comer?": "2",
+          "¿Qué momento del día sueles tener más hambre?": "2",
+          "¿estas acostumbrado a desayunar? de no ser así, crees que podrías hacerlo? ": "2",
+          "¿Tienes freidora de aire?": "Si",
+          "¿Tienes alguna alergia o intolerancia?": "2",
+          "¿Sueles salir fuera a comer? ¿con que frecuencia y que tipo de sitios visitas para comer?": "2",
+          "¿Sales de fiesta con regularidad consumiendo alcohol?": "2",
+          "¿En que supermercado sueles hacer la compra?": "2",
+          "Si hay alguna otra cosa que crees que deba tener en cuenta sobre tu alimentación cuéntamelo aquí.": "2",
+          "¿Cuál es tu ocupación (estudio, trabajo...)? ¿Realizas algún tipo de esfuerzo físico en ella?": "2",
+          "En tu tiempo libre ¿Qué nivel de actividad dirías que tienes? Si conoces tu actividad diaria en pasos indícamela por favor.": "2",
+          "¿Practicas algún otro tipo de actividad física?": "2",
+          "¿Cómo dirías que es tu calidad de sueño/descanso?": "2",
+          "¿Tomas o tomarías suplementación?": "2",
+          "submittedAt": "2025-09-28T17:16:56.605+02:00",
+          "formMode": "test"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Cuando se rellena el Cuestionario Inicial": {
+      "main": [
+        [
+          {
+            "node": "Agregar fila al excel de seguimiento de clientes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agregar fila al excel de seguimiento de clientes": {
+      "main": [
+        []
+      ]
+    },
+    "Todos los días a las 8:00": {
+      "main": [
+        [
+          {
+            "node": "Get las filas que tengan renovación dentro de 2 días",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get las filas que tengan renovación dentro de 2 días": {
+      "main": [
+        [
+          {
+            "node": "Send email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "d1bc261e-7f77-46ce-b92d-fed35fc73e16",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "b70ad53691c98798010abce093a23864d86e09d735f8a0d344743182d1ad8c8a"
+  },
+  "id": "h9mtFCC9oQyx96tx",
+  "tags": []
+}
